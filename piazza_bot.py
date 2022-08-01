@@ -16,4 +16,4 @@ class PiazzaBot(object):
        
 if __name__ == '__main__':    
     poster = PiazzaBot(os.getenv("PIAZZA_CLASS_ID"))
-    poster.make_note(os.getenv("TITLE"), os.getenv("BODY"), os.getenv("FOLDER")
+    poster.make_note(os.getenv("TITLE"), os.getenv("BODY"), os.getenv("FOLDER"))
