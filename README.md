@@ -21,6 +21,6 @@ TITLE : Title of the post
 
 BODY : Body of the post, in a markdown format
 
-FOLDER : The single folder you want to post to, ex: P1, P2, P3...
+PROJECT : The single subfolder of the 'project' folder you want to post to, ex: projet_1, project_2, project_3, project_4
 
 $ piazza_bot.py
