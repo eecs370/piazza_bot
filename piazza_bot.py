@@ -20,8 +20,10 @@ class PiazzaBot(object):
             path += subdir
             dirs.append(path)
             path += "/"
+            
+        config = {"is_announcement": 1, "bypass_email": 1}
 
-        params = {"nid":self.network_id,"type":"note","subject":subject,"content":markdown_content,"anonymous":"no","client_time":"5/29/00 5:29 PM","status":"active","editor":"md","folders":dirs,"config":{"is_announcement": 1, "bypass_email": 1}}
+        params = {"nid":self.network_id,"type":"note","subject":subject,"content":markdown_content,"anonymous":"no","client_time":"5/29/00 5:29 PM","status":"active","editor":"md","folders":dirs,"config":config}
 
 
         self.rpc.content_create(params)
