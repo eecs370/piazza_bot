@@ -11,12 +11,11 @@ class PiazzaBot(object):
         self.network_id = class_id
 
     def make_note(self, subject, markdown_content, folder):
-        path = "project\\" + folder
-        params = {"nid":self.network_id,"type":"note","subject":subject,"content":markdown_content,"anonymous":"no","client_time":"5/29/00 5:29 PM","status":"active","editor":"md","folders":[path],"config":{"is_announcement": 1, "bypass_email": 1}}
+        params = {"nid":self.network_id,"type":"note","subject":subject,"content":markdown_content,"anonymous":"no","client_time":"5/29/00 5:29 PM","status":"active","editor":"md","folders":[folder],"config":{"is_announcement": 1, "bypass_email": 1}}
         
         
         self.rpc.content_create(params)
        
 if __name__ == '__main__':    
     poster = PiazzaBot(os.getenv("PIAZZA_CLASS_ID"))
-    poster.make_note(os.getenv("TITLE"), os.getenv("BODY"), os.getenv("PROJECT"))
+    poster.make_note(os.getenv("TITLE"), os.getenv("BODY"), os.getenv("FOLDER"))
