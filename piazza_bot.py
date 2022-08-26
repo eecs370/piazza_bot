@@ -11,20 +11,9 @@ class PiazzaBot(object):
         self.network_id = class_id
 
     def make_note(self, subject, markdown_content, folder):
-       
-        path = ""
+        dirs = ["project∕" + folder,"project"]
 
-        dirs = []
-
-        for subdir in folder.split("/"):
-            path += subdir
-            dirs.append(path)
-            path += "/"
-            
-        config = {"is_announcement": 1, "bypass_email": 1}
-
-        params = {"nid":self.network_id,"type":"note","subject":subject,"content":markdown_content,"anonymous":"no","client_time":"5/29/00 5:29 PM","status":"active","editor":"md","folders":dirs,"config":config}
-
+        params = {"nid":self.network_id,"type":"note","subject":subject,"content":markdown_content,"anonymous":"no","client_time":"8/26/2022, 7:08:39 PM","status":"active","folders":dirs,"config":{"is_announcement":1,"bypass_email":1},"prof_override":True}
 
         self.rpc.content_create(params)
        
