@@ -24,3 +24,5 @@ BODY : Body of the post, in a markdown format
 PROJECT : The single subfolder of the 'project' folder you want to post to, ex: projet_1, project_2, project_3, project_4
 
 $ piazza_bot.py
+
+This repo needs to be public, as it is in the project spec repos which host github pages.
