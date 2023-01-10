@@ -11,7 +11,7 @@ class PiazzaBot(object):
         self.network_id = class_id
 
     def make_note(self, subject, markdown_content, folder):
-        dirs = [folder,"project"]
+        dirs = ["p1asm", "p1sim", "p1mult"]
 
         params = {"nid":self.network_id,"type":"note","subject":subject,"content":markdown_content,"anonymous":"no","client_time":"8/26/2022, 7:08:39 PM","status":"active","folders":dirs,"config":{"is_announcement":1,"bypass_email":1},"prof_override":True}
 
