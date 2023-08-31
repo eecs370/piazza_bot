@@ -16,7 +16,7 @@ TITLE : Title of the post
 
 BODY : Body of the post, in a markdown format
 
-PROJECT : The single subfolder of the 'project' folder you want to post to, ex: projet_1, project_2, project_3, project_4
+PROJECT : The single subfolder of the 'project' folder you want to post to, ex: project_1, project_2, project_3, project_4
 
 <img width="839" alt="Screenshot 2023-08-31 at 11 38 21 AM" src="https://github.com/eecs370/piazza_bot/assets/46696737/c5fcb696-dc07-4cdb-b721-eae3383e5f4c">
 
